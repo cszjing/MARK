@@ -21,4 +21,35 @@ conda create -n diva python=3.9
 conda activate mark
 pip install -r requirements.txt
 ```
-## * Installation
+## 🌟 Main Results
+
+## Comparative results of our MARK against existing methods on the Kanjur Dataset
+
+| Method                   | Query | F1    | F2    | F3    | F4    | Avg   |
+|--------------------------|-------|-------|-------|-------|-------|-------|
+| **QBE**                  |       |       |       |       |       |       |
+| BoVW [4]                 | QBE   | 40.40 | 51.43 | 42.25 | 43.62 | 44.43 |
+| AVWE [6]                 |       | 59.57 | 66.83 | 60.76 | 58.63 | 61.45 |
+| RNN [6]                  |       | 54.54 | 62.05 | 53.30 | 60.82 | 57.68 |
+| AVWE-SC [8]              |       | 63.25 | 65.06 | 63.99 | 64.71 | 64.25 |
+| AVWE+RNN [6]             |       | 75.05 | 79.43 | 75.39 | 75.83 | 76.43 |
+| Seq2seq (F2H1) [9]       |       | 80.16 | 85.08 | 79.08 | 84.59 | 82.23 |
+| CNN (FC1) [10]           |       | 84.48 | 85.98 | 80.03 | 83.27 | 83.44 |
+| Seq2seq+CNN [10]         |       | 88.02 | 90.35 | 84.62 | 87.21 | 87.55 |
+| PUNet [14]               |       | 95.57 | 95.02 | 95.63 | 93.19 | 94.85 |
+| EENet [HENet]            |       | 96.63 | 96.53 | 96.89 | 95.58 | 96.41 |
+| HENet [HENet]            |       | 96.70 | 96.63 | 96.92 | 95.62 | 96.47 |
+| CLIP* [clip]             |       | 97.99 | 98.52 | 98.36 | 97.99 | 98.21 |
+| MetaCLIP* [metaclip]     |       | 98.90 | 99.17 | 99.20 | 98.76 | 99.01 |
+| **MARK (Ours)**          |       | **99.10** | **99.40** | **99.27** | **98.89** | **99.16** |
+| **QBS**                  |       |       |       |       |       |       |
+| PUNet [14]               | QBS   | 88.46 | 85.67 | 91.77 | 90.11 | 89.00 |
+| EENet [HENet]            |       | 88.90 | 94.93 | 92.61 | 92.39 | 92.21 |
+| HENet [HENet]            |       | 89.19 | 95.13 | 93.21 | 92.51 | 92.51 |
+| CLIP* [clip]             |       | 70.62 | 71.17 | 79.32 | 84.82 | 76.48 |
+| MetaCLIP* [metaclip]     |       | 77.73 | 75.50 | 86.06 | 77.89 | 79.30 |
+| **MARK (Ours)**          |       | **98.58** | **98.01** | **98.71** | **94.27** | **97.39** |
+
+> *\* Indicates our reproduction, training on the Kanjur dataset using the loss function mentioned in Section 3.3.*
+
+
