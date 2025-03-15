@@ -63,6 +63,12 @@ pip install -r requirements.txt
 | **MARK (Ours)**          | **85.19**  | **81.87**  | **91.59**  | **86.84**  | **92.64**  | **88.17**  | **95.65**  | **93.18**  |
 
 > \* Indicates our reproduction, training on the Geser dataset.
-
-
+## Ablation study on PHOC for Kanjur dataset across four folds.
+<p align="center">
+    <img src="figs/multi-w-wo-phoc.jpg" alt="overview" width="800" />
+</p>
+## Comparison between KAN and MLP on the Kanjur dataset cross four folds.
+<p align="center">
+    <img src="figs/multi-KAN-MLP.jpg" alt="overview" width="800" />
+</p>
 
