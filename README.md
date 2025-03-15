@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 ## 🌟 Main Results
 
-## Comparative results of our MARK against existing methods on the Kanjur Dataset
+### Comparative results of our MARK against existing methods on the Kanjur Dataset
 
 | Method                   | Query | F1    | F2    | F3    | F4    | Avg   |
 |--------------------------|-------|-------|-------|-------|-------|-------|
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 > \* Indicates our reproduction, training on the Kanjur dataset.
 
-## Comparative results of our MARK against existing methods on the Geser Dataset
+### Comparative results of our MARK against existing methods on the Geser Dataset
 
 | Method                   | 20% (QBE) | 20% (QBS) | 40% (QBE) | 40% (QBS) | 60% (QBE) | 60% (QBS) | 80% (QBE) | 80% (QBS) |
 |--------------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
@@ -64,12 +64,12 @@ pip install -r requirements.txt
 
 > \* Indicates our reproduction, training on the Geser dataset.
 
-## Ablation study on PHOC for Kanjur dataset across four folds.
+### Ablation study on PHOC for Kanjur dataset across four folds.
 <p align="center">
     <img src="figs/multi-w-wo-phoc.jpg" alt="overview" width="800" />
 </p>
 
-##  Comparison between KAN and MLP on the Kanjur dataset cross four folds.
+###  Comparison between KAN and MLP on the Kanjur dataset cross four folds.
 <p align="center">
     <img src="figs/multi-KAN-MLP.jpg" alt="overview" width="800" />
 </p>
