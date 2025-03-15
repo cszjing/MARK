@@ -16,7 +16,9 @@ Word spotting serves as a fundamental task in Historical Document Image Retrieva
 </p>
 
 ## 🔨 Installation
+```bash
 conda create -n diva python=3.9
 conda activate mark
-pip install -r requirements.txt 
+pip install -r requirements.txt
+```
 
