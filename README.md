@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## 🌟 Main Results
 
 ## Comparative results of our MARK against existing methods on the Kanjur Dataset
-<div align="center">
+
 | Method                   | Query | F1    | F2    | F3    | F4    | Avg   |
 |--------------------------|-------|-------|-------|-------|-------|-------|
 | BoVW [4]                 | **QBE** | 40.40 | 51.43 | 42.25 | 43.62 | 44.43 |
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 | **MARK (Ours)**          |       | **98.58** | **98.01** | **98.71** | **94.27** | **97.39** |
 
 > *\* Indicates our reproduction, training on the Kanjur dataset.
-</div>
+
 ## Comparative results of our MARK against existing methods on the Geser Dataset
 
 | Method                   | 20% (QBE) | 20% (QBS) | 40% (QBE) | 40% (QBS) | 60% (QBE) | 60% (QBS) | 80% (QBE) | 80% (QBS) |
