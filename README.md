@@ -49,8 +49,20 @@ pip install -r requirements.txt
 | MetaCLIP* [metaclip]     |       | 77.73 | 75.50 | 86.06 | 77.89 | 79.30 |
 | **MARK (Ours)**          |       | **98.58** | **98.01** | **98.71** | **94.27** | **97.39** |
 
-> *\* Indicates our reproduction, training on the Kanjur dataset using the loss function mentioned in Section 3.3.*
+> *\* Indicates our reproduction, training on the Kanjur dataset.
 
+## Comparative results of our MARK against existing methods on the Geser Dataset
+
+| Method                   | 20% (QBE) | 20% (QBS) | 40% (QBE) | 40% (QBS) | 60% (QBE) | 60% (QBS) | 80% (QBE) | 80% (QBS) |
+|--------------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| PUNet [14]               | 70.85      | 57.42      | 84.33      | 70.37      | 86.53      | 71.57      | 89.42      | 82.96      |
+| EENet [HENet]            | 73.35      | 58.65      | 86.13      | 72.07      | 88.57      | 74.16      | 93.91      | 91.38      |
+| HENet [HENet]            | 73.45      | 59.38      | 86.24      | 73.01      | 88.67      | 74.75      | 94.18      | 92.83      |
+| CLIP* [clip]             | 82.03      | 42.21      | 89.95      | 65.99      | 90.98      | 71.66      | 94.70      | 83.28      |
+| MetaCLIP* [metaclip]     | 82.85      | 79.62      | 90.33      | 84.54      | 91.74      | 85.96      | 94.32      | 91.10      |
+| **MARK (Ours)**          | **85.19**  | **81.87**  | **91.59**  | **86.84**  | **92.64**  | **88.17**  | **95.65**  | **93.18**  |
+
+> *\* Indicates our reproduction, training on the Geser dataset.
 
 
 
