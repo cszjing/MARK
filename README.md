@@ -74,3 +74,5 @@ pip install -r requirements.txt
     <img src="figs/multi-KAN-MLP.jpg" alt="overview" width="800" />
 </p>
 
+## 💙 Acknowledgement
+MARK is built upon the awesome [CLIP](https://github.com/openai/CLIP), [FastKAN](https://github.com/ZiyaoLi/fast-kan), [timm](https://github.com/huggingface/pytorch-image-models/). 
