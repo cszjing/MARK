@@ -23,18 +23,26 @@ pip install -r requirements.txt
 ```
 
 ## 🦾 Regular Training 
-Take the Geser dataset as example, this project provides two ways to run the program:
+This project provides two ways to run the program:
 
 #### 1. Using Bash  
 Run the following command in the terminal:  
 ```bash
+# For Kanjur Dataset
+bash ./run_shell/train_Kanjur.sh
+
+# For Geser Dataset
 bash ./run_shell/train_Geser.sh
 ```
 
-#### 1. Using Python
+#### 2. Using Python
 Alternatively, you can run the program directly with Python:
 ```python
-python train.py --exp_name Geser_0.2 --data_dir /path/to/your/dataset_dir/ --data_split_dir /path/to/your/dataset/split_dir --batch_size 64 --data_split 0.4  --workers 32 --input_dim 512  --num_threads 2000 --clip_LN_lr 1e-6 --retri_lr 1e-4  --clip_name MetaCLIP
+# For Kanjur Dataset
+python train.py --exp_name Kanjur_f1 --data_dir /path/to/your/dataset_dir/ --data_split_dir /path/to/your/dataset/split_dir --batch_size 64 --data_split 3  --workers 32 --num_threads 1000 --clip_LN_lr 1e-6 --clip_name MetaCLIP
+
+# For Geser Dataset
+python train.py --exp_name Geser_0.2 --data_dir /path/to/your/dataset_dir/ --data_split_dir /path/to/your/dataset/split_dir --batch_size 64 --data_split 0.4  --workers 32 --input_dim 512  --num_threads 2000 --clip_LN_lr 1e-6 --clip_name MetaCLIP
 ```
 ⚠️**Notes：**
 `bash ./run_shell/train_Geser.sh` and `python train.py` should be adjusted according to your actual file names.
