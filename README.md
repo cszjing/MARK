@@ -45,7 +45,7 @@ python train.py --exp_name Kanjur_f1 --data_dir /path/to/your/dataset_dir/ --dat
 python train.py --exp_name Geser_0.2 --data_dir /path/to/your/dataset_dir/ --data_split_dir /path/to/your/dataset/split_dir --batch_size 64 --data_split 0.4  --workers 32 --input_dim 512  --num_threads 2000 --clip_LN_lr 1e-6 --clip_name MetaCLIP
 ```
 ⚠️**Notes：**
-`bash ./run_shell/train_Geser.sh` and `python train.py` should be adjusted according to your actual file names.
+The parameters in `bash ./run_shell/train_Geser.sh` and `python train.py` should be adjusted according to your actual file path and server environment configuration.
 
 
 ## 🌟 Main Results
