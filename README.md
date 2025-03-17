@@ -23,9 +23,7 @@ pip install -r requirements.txt
 ```
 
 ## 🦾 Regular Training 
-### 🚀 Geser Dataset Example  
-This project provides two ways to run the program using the Geser dataset:
-
+Take the Geser dataset as example, this project provides two ways to run the program:
 
 #### 1. Using Bash  
 Run the following command in the terminal:  
@@ -38,7 +36,7 @@ Alternatively, you can run the program directly with Python:
 ```python
 python train.py --exp_name Geser_0.2 --data_dir /path/to/your/dataset_dir/ --data_split_dir /path/to/your/dataset/split_dir --batch_size 64 --data_split 0.4  --workers 32 --input_dim 512  --num_threads 2000 --clip_LN_lr 1e-6 --retri_lr 1e-4  --clip_name MetaCLIP
 ```
-⚠️**注意事项：**
+⚠️**Notes：**
 bash ./run_shell/train_Geser.sh and python train.py should be adjusted according to your actual file names.
 
 
