@@ -22,38 +22,10 @@ import cv2 as cv
 import math
 import glob
 from open_clip import create_model_from_pretrained, create_model_and_transforms
-# from pretrain_clip import model as pretrainclip
-# Freeze model utility functions
+
 def freeze_model(m):
     m.requires_grad_(False)
 
-# def freeze_all_but_bn(m):
-#     for name, param in m.named_parameters():
-#         if 'ln' not in name:
-#             param.requires_grad = False
-
-# def freeze_all_but_ln(m):
-#     """冻结所有层，除了 LayerNorm 层"""
-#     for name, param in m.named_parameters():
-#         if 'ln' not in name.lower():  # 兼容 CLIP 的 LayerNorm 命名方式
-#             param.requires_grad = False
-
-# def freeze_all_but_bn(m):
-#     if not isinstance(m, torch.nn.LayerNorm):
-#         if hasattr(m, 'weight') and m.weight is not None:
-#             m.weight.requires_grad_(False)
-#         if hasattr(m, 'bias') and m.bias is not None:
-#             m.bias.requires_grad_(False)
-            
-# def freeze_all_but_bn(model):
-#     for name, module in model.named_modules():
-#         if not isinstance(module, torch.nn.LayerNorm):
-#             for param in module.parameters():
-#                 param.requires_grad = False
-#         else:            
-#             for param in module.parameters():
-#                 param.requires_grad = True
-#                 # print(name, module,param.requires_grad)
                 
 def all_train(model):
     for name, module in model.named_modules():                   
