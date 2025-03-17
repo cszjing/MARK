@@ -75,4 +75,4 @@ pip install -r requirements.txt
 </p>
 
 ## 💙 Acknowledgement
-MARK is built upon the awesome [CLIP](https://github.com/openai/CLIP), [OpenCLIP](https://github.com/mlfoundations/open_clip), [FastKAN](https://github.com/ZiyaoLi/fast-kan). 
+MARK is built upon the awesome [CLIP](https://github.com/openai/CLIP), [MetaCLIP](https://github.com/facebookresearch/MetaCLIP), [FastKAN](https://github.com/ZiyaoLi/fast-kan). 
