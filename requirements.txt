@@ -20,9 +20,9 @@ scipy==1.10.1
 sentencepiece==0.2.0
 timm==1.0.14
 tokenizers==0.20.3
-torch @ file:///data02/WeiHX_GRP/GujiProj/install_package/torch-1.12.1-cp38-cp38-manylinux1_x86_64.whl#sha256=0b44601ec56f7dd44ad8afc00846051162ef9c26a8579dda0a02194327f2d55e
-torchaudio @ file:///data02/WeiHX_GRP/GujiProj/install_package/torchaudio-0.12.1-cp38-cp38-manylinux1_x86_64.whl#sha256=186dcaa00b60e441f9c489c00966ecdd7412c2a4592058107f8c3a888cbbf337
-torchvision @ file:///data02/WeiHX_GRP/GujiProj/install_package/torchvision-0.13.1-cp38-cp38-manylinux1_x86_64.whl#sha256=7cb789ceefe6dcd0dc8eeda37bfc45efb7cf34770eac9533861d51ca508eb5b3
+torch==1.12.1
+torchaudio==0.12.1
+torchvision===0.13.1
 tqdm==4.67.1
 transformers==4.46.3
 typing_extensions==4.12.2
